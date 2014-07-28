@@ -175,23 +175,23 @@ module Brcobranca
           doc.show boleto.codigo_barras.linha_digitavel, :tag => :grande
           doc.moveto :x => '0.7 cm' , :y => '16 cm'
           doc.show boleto.local_pagamento
-          doc.moveto :x => '16.5 cm' , :y => '16 cm'
+          doc.moveto :x => '18 cm' , :y => '16 cm'
           doc.show boleto.data_vencimento.to_s_br if boleto.data_vencimento
           doc.moveto :x => '0.7 cm' , :y => '15.2 cm'
           doc.show boleto.cedente
-          doc.moveto :x => '16.5 cm' , :y => '15.2 cm'
+          doc.moveto :x => '17.5 cm' , :y => '15.2 cm'
           doc.show boleto.agencia_conta_boleto
           doc.moveto :x => '0.7 cm' , :y => '14.4 cm'
           doc.show boleto.data_documento.to_s_br if boleto.data_documento
           doc.moveto :x => '4.2 cm' , :y => '14.4 cm'
           doc.show boleto.numero_documento
-          doc.moveto :x => '10 cm' , :y => '14.4 cm'
+          doc.moveto :x => '12 cm' , :y => '14.4 cm'
           doc.show boleto.especie_documento
           doc.moveto :x => '11.7 cm' , :y => '14.4 cm'
           doc.show boleto.aceite
           doc.moveto :x => '13 cm' , :y => '14.4 cm'
           doc.show boleto.data_processamento.to_s_br if boleto.data_processamento
-          doc.moveto :x => '16.5 cm' , :y => '14.4 cm'
+          doc.moveto :x => '17.4 cm' , :y => '14.4 cm', :text_align => :right
           doc.show boleto.nosso_numero_boleto
           doc.moveto :x => '4.4 cm' , :y => '13.5 cm'
           doc.show boleto.carteira
@@ -201,7 +201,7 @@ module Brcobranca
           doc.show boleto.quantidade
           # doc.moveto :x => '11 cm' , :y => '13.5 cm'
           # doc.show boleto.valor.to_currency
-          doc.moveto :x => '16.5 cm' , :y => '13.5 cm'
+          doc.moveto :x => '18.3 cm' , :y => '13.5 cm'
           doc.show boleto.valor_documento.to_currency
           doc.moveto :x => '0.7 cm' , :y => '12.7 cm'
           doc.show boleto.instrucao1

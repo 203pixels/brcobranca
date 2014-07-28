@@ -232,7 +232,7 @@ module Brcobranca
           doc.show boleto.local_pagamento
 
           #vencimento
-          doc.moveto :x => colunas[11] , :y => linhas[1]
+          doc.moveto :x => colunas[20] , :y => linhas[1]
           doc.show boleto.data_vencimento.to_s_br
 
           #cedente
@@ -240,7 +240,7 @@ module Brcobranca
           doc.show boleto.cedente
 
           #agencia/codigo cedente
-          doc.moveto :x => colunas[11] , :y => linhas[2]
+          doc.moveto :x => colunas[20] , :y => linhas[2]
           doc.show boleto.agencia_conta_boleto
 
           #data do documento
@@ -265,7 +265,7 @@ module Brcobranca
 
 
           #nosso numero
-          doc.moveto :x => colunas[11] , :y => linhas[3]
+          doc.moveto :x => colunas[20] , :y => linhas[3]
           doc.show boleto.nosso_numero_boleto
 
           #uso do banco
@@ -289,7 +289,7 @@ module Brcobranca
           doc.show boleto.valor_documento.to_currency
 
           #valor do documento
-          doc.moveto :x => colunas[11] , :y => linhas[4]
+          doc.moveto :x => colunas[20] , :y => linhas[4]
           doc.show boleto.valor_documento.to_currency
 
           #Instruções
