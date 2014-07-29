@@ -185,11 +185,11 @@ module Brcobranca
           doc.show boleto.data_documento.to_s_br if boleto.data_documento
           doc.moveto :x => '4.2 cm' , :y => '14.4 cm'
           doc.show boleto.numero_documento
-          doc.moveto :x => '12 cm' , :y => '14.4 cm'
+          doc.moveto :x => '10 cm' , :y => '14.4 cm'
           doc.show boleto.especie_documento
-          doc.moveto :x => '11.7 cm' , :y => '14.4 cm'
+          doc.moveto :x => '11.8 cm' , :y => '14.4 cm'
           doc.show boleto.aceite
-          doc.moveto :x => '13 cm' , :y => '14.4 cm'
+          doc.moveto :x => '8.5 cm' , :y => '14.4 cm'
           doc.show boleto.data_processamento.to_s_br if boleto.data_processamento
           doc.moveto :x => '17.4 cm' , :y => '14.4 cm', :text_align => :right
           doc.show boleto.nosso_numero_boleto
