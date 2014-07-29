@@ -82,7 +82,7 @@ module Brcobranca
         padrao = {
           :moeda => "9", :data_documento => Date.today, :dias_vencimento => 1, :quantidade => 1,
           :especie_documento => "DM", :especie => "R$", :aceite => "S", :valor => 0.0,
-          :local_pagamento => "Até o vencimento, preferencialmente no Itaú. Após o vencimento, somente no Itaú"
+          :local_pagamento => "Até o vencimento, preferencialmente no Itaú. Após o vencimento, somente no Itaú."
         }
 
         campos = padrao.merge!(campos)
