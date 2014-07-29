@@ -133,7 +133,7 @@ module Brcobranca
         def modelo_generico_cabecalho(doc, boleto)
           #INICIO Primeira parte do BOLETO
           # LOGOTIPO do BANCO
-          doc.image(boleto.logotipo, :x => '0.5 cm', :y => '24.85 cm', :zoom => 80)
+          doc.image(boleto.logotipo, :x => '0.5 cm', :y => '24.7 cm', :zoom => 80)
           # Dados
           doc.moveto :x => '5.2 cm' , :y => '24.85 cm'
           doc.show "#{boleto.banco}-#{boleto.banco_dv}", :tag => :grande
