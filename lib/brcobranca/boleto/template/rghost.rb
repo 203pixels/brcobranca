@@ -161,7 +161,7 @@ module Brcobranca
           doc.show "#{boleto.sacado} - #{boleto.sacado_documento.formata_documento} #{boleto.sacado_endereco}"
           
           doc.moveto :x => '0.7 cm' , :y => '23 cm'
-          doc.show "Endereço do Sr. Madeira 75.060.590/0001-47"
+          doc.show "ALAMEDA DOUTOR MURICY 474 5 ANDAR CENTRO CURITIBA PR 80010-120"
           
           # doc.moveto :x => '1.4 cm' , :y => '20.6 cm'
           # doc.show ""
